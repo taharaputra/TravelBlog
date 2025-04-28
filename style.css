@@ -1,67 +1,79 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.carousel-item {
+  position: relative;
+  height: 450px; 
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: auto;          
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  max-width: 80%;
+  color: #fff;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+form .form-control {
+  border-radius: 0.5rem;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+      height: 300px;
   }
-  
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
   .carousel-caption {
-    position: absolute;
-    transform: translate(0%, -130%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    width: 70%;
+      width: 90%;
+      font-size: 0.9rem;
+      padding: 0.8rem;
   }
-
-  @media (max-width: 768px) {
-    .carousel-caption {
-        transform: translate(0%, -50%);
-        width: 90%;
-        font-size: 0.9rem;
-        padding: 0.8rem;
-    }
-  }
-
-  .carousel-item img {
-    max-height: 450px;
-    object-fit: cover;
-    opacity: 0.95;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  h2 {
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  footer {
-    font-size: 0.9rem;
-  }
-  
-  form .form-control {
-    border-radius: 0.5rem;
-  }
-  
-  .btn-success {
-    background-color: #28a745;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-success:hover {
-    background-color: #218838;
-  }
+}
