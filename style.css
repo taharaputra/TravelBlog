@@ -18,10 +18,19 @@ body {
     width: 70%;
   }
 
+  @media (max-width: 768px) {
+    .carousel-caption {
+        transform: translate(0%, -50%);
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+  }
+
   .carousel-item img {
     max-height: 450px;
     object-fit: cover;
-    opacity: 95%;
+    opacity: 0.95;
   }
   
   .card {
